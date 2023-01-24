@@ -13,8 +13,8 @@ model Courses {
   description String?
   duration    Int
   created_at  DateTime @default(now())
-  teacher     Teacher  @relation(fields: [teacherId], references: [id])
-  teacherId   String   @unique
+  teacher     Teacher? @relation(fields: [teacherId], references: [id])
+  teacherId   String?  @unique @map("teacher_id")
 
   @@map("courses")
 }
@@ -32,4 +32,6 @@ model Teacher {
   id      String   @id @default(uuid())
   name    String
   Courses Courses?
+
+  @@map("teachers")
 }
