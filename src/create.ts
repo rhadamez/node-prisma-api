@@ -5,9 +5,9 @@ const prisma = new PrismaClient()
 async function main() {
   const result = await prisma.courses.create({
     data: {
-      duration: 420,
-      name: 'Java com Spring',
-      description: 'Conceitos iniciais do spring boot',
+      duration: 200,
+      name: 'Nodejs com Nestjs',
+      description: 'Um framework diferenciado para microservices',
       created_at: new Date()
     }
   })
