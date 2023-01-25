@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tsx watch src/search/findByCourse.ts"
+    "dev": "tsx watch src/modules/delete-many-to-many.ts"
   },
   "dependencies": {
     "@prisma/client": "4.9.0",
