@@ -15,7 +15,7 @@ model Courses {
   created_at     DateTime         @default(now())
   teacher        Teacher?         @relation(fields: [teacherId], references: [id])
   teacherId      String?          @unique @map("teacher_id")
-  CoursesModules CoursesModules[]
+  coursesModules CoursesModules[]
 
   @@map("courses")
 }
@@ -25,7 +25,7 @@ model Modules {
   name           String           @unique
   description    String
   created_at     DateTime         @default(now())
-  CoursesModules CoursesModules[]
+  coursesModules CoursesModules[]
 
   @@map("modules")
 }
@@ -45,7 +45,7 @@ model CoursesModules {
 model Teacher {
   id      String   @id @default(uuid())
   name    String   @unique
-  Courses Courses?
+  courses Courses?
 
   @@map("teachers")
 }
