@@ -6,9 +6,10 @@ async function main() {
   const result = await prisma.courses.create({
     data: {
       duration: 200,
-      name: 'Nodejs com Nestjs',
-      description: 'Um framework diferenciado para microservices',
-      created_at: new Date()
+      name: 'Elixir',
+      description: 'Curso de Elixir',
+      created_at: new Date(),
+      teacherId: '2dff8795-8863-4e86-8979-2783987032af'
     }
   })
 
