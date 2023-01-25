@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tsx watch src/courses/filterOr.ts"
+    "dev": "tsx watch src/courses/queryRaw.ts"
   },
   "dependencies": {
     "@prisma/client": "4.9.0",
