@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tsx watch src/courses/create_fk_teacher.ts"
+    "dev": "tsx watch src/teachers/findRelation.ts"
   },
   "dependencies": {
     "@prisma/client": "4.9.0",
