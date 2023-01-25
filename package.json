@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tsx watch src/modules/create-many-to-many.ts"
+    "dev": "tsx watch src/modules/create-many-from-zero.ts"
   },
   "dependencies": {
     "@prisma/client": "4.9.0",
