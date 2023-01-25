@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "tsx watch src/modules/create-many-from-zero.ts"
+    "dev": "tsx watch src/search/findByCourse.ts"
   },
   "dependencies": {
     "@prisma/client": "4.9.0",
